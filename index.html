@@ -1,0 +1,197 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batch 252 Student Portal</title>
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Cool Modern Style -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top left, #0f0f0f, #121212);
+  color: #f3f4f6;
+  padding: 30px 20px;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 0.3rem;
+  background: linear-gradient(to right, #7c3aed, #4f46e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 400;
+  color: #a1a1aa;
+  margin-bottom: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.subject-section {
+  margin-bottom: 60px;
+}
+
+.subject-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 40px 0 20px;
+  color: #c084fc;
+  text-align: center;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.link-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 26px;
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 25px rgba(124, 58, 237, 0.2);
+  position: relative;
+}
+
+.link-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 35px rgba(99, 102, 241, 0.6);
+}
+
+.link-card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  z-index: -1;
+  filter: blur(30px);
+  opacity: 0.2;
+  border-radius: 18px;
+}
+
+.link-card a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 26px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(145deg, #6366f1, #8b5cf6);
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+}
+
+.link-card a:hover {
+  background: linear-gradient(145deg, #4f46e5, #7c3aed);
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <div class="container">
+    <h1>Batch 252 Portal</h1>
+    <h2>Explore Top-Tier Study Resources</h2><!-- SUBJECT SECTION -->
+<div class="subject-section">
+  <div class="subject-title">Frontend Development</div>
+  <div class="link-grid">
+    <!-- FRONTEND LINKS -->
+    <div class="link-card">
+      <a href="https://reactjs.org" target="_blank">
+        <i class="ri-code-s-slash-line"></i> React Basics
+      </a>
+    </div>
+    <div class="link-card">
+      <a href="https://tailwindcss.com" target="_blank">
+        <i class="ri-palette-line"></i> Tailwind CSS Docs
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- SUBJECT SECTION -->
+<div class="subject-section">
+  <div class="subject-title">Documentation & Reference</div>
+  <div class="link-grid">
+    <!-- DOCUMENTATION LINKS -->
+    <div class="link-card">
+      <a href="https://developer.mozilla.org/en-US/" target="_blank">
+        <i class="ri-book-open-line"></i> MDN Web Docs
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- SUBJECT SECTION -->
+<div class="subject-section">
+  <div class="subject-title">Data Structures</div>
+  <div class="link-grid">
+    <!-- DS LINKS -->
+    <div class="link-card">
+      <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank">
+        <i class="ri-database-2-line"></i> GFG Data Structures
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- TEMPLATE TO ADD MORE SUBJECTS (COPY & EDIT THIS BLOCK) -->
+<!--
+<div class="subject-section">
+  <div class="subject-title">Subject Name</div>
+  <div class="link-grid">
+    <div class="link-card">
+      <a href="https://example.com" target="_blank">
+        <i class="ri-external-link-line"></i> Resource Title
+      </a>
+    </div>
+    <!-- Add more links here -->
+  </div>
+</div>
+-->
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2025 Batch 252 Portal. Designed with passion for learners.</p>
+</footer>
+
+  </div>
+</body>
+</html>
